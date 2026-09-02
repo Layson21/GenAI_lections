@@ -35,5 +35,7 @@ jobs:
       - name: Pull model
         run: ollama pull hf.co/unsloth/Qwen3.5-4B-GGUF:Q4_K_S
 
-      - name: Run tests
-        run: python test_audiofile.py
+      - name: Run tests with coverage
+        run: |
+          coverage run -m unittest test_audiofile.py
+          coverage report
