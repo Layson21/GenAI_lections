@@ -1,5 +1,2 @@
-!\[Test Coverage](https://img.shields.io/badge/Test%20Coverage-100%25-brightgreen)
-GenAI / LLM COURSE MATERIALS
-
-CC BY / MIT LICENSE
+\[!\[Test Coverage](https://coveralls.io/repos/github/Layson21/GenAI\_lections/badge.svg?branch=main)](https://coveralls.io/github/Layson21/GenAI\_lections?branch=main)
 

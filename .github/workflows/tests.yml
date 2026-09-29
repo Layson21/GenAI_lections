@@ -36,6 +36,13 @@ jobs:
         run: ollama pull hf.co/unsloth/Qwen3.5-4B-GGUF:Q4_K_S
 
       - name: Run tests with coverage
-        run: |
-          coverage run -m unittest test_audiofile.py
-          coverage report
+  	run: |
+    	  coverage run -m unittest test_audiofile.py
+    	  coverage report
+    	  coverage lcov -o coverage.lcov
+
+      - name: Coveralls
+  	uses: coverallsapp/github-action@v2
+  	with:
+    	  file: coverage.lcov
+    	  github-token: ${{ secrets.GITHUB_TOKEN }}
